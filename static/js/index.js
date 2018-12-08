@@ -1,5 +1,3 @@
-// data from filter app
-// var filteredData = sightingsFiltered;
 
 // Get a reference to the table body
 
@@ -15,8 +13,8 @@ var tbody = d3.select("tbody");
 // });
 
 
-// enter filtered data into table
-sightingsFiltered.forEach((sightingsReport) => {
+// enter data into table
+sightingData.forEach((sightingsReport) => {
   console.log(sightingsReport);
   var row = tbody.append("tr");
   Object.entries(sightingsReport).forEach(([key, value]) => {
